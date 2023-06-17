@@ -1,0 +1,75 @@
+nav{
+    color: white;
+}
+
+.img{
+    height: 40px;
+    width: 40px;
+}
+
+.img2 {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://i.stack.imgur.com/tiCHu.png);
+    background-position: center top;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2)
+  }
+
+  .img3 {
+    width: 50px;
+    height: 50px;
+    background-image: url(https://i.stack.imgur.com/tiCHu.png);
+    background-position: center top;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2)
+  }
+
+  .img4 {
+    width: 70px;
+    height: 50px;
+    padding: 5px;
+   
+   
+    border-radius: 50%;
+    
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2)
+  }
+
+  .button5 
+        {
+        background-color: #48abe0;
+        color: white;
+        border: none;
+        padding: 5px;
+        font-size: 31px;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0 2px 4px darkslategray;
+        }
+  
+
+    
+
+      .img6{
+        height: 100px;
+        width: 250px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding: 5px;
+      }
+
+     .contain{
+        background-color: rgb(65, 14, 204);
+     }
+
+      .section{
+        margin-top: 30px;
+        margin-left: 25px;
+      }
+
+      .body{
+        background-color: rgb(17, 11, 51);
+      }

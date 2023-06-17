@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+          class="img"
+        />&nbsp;&nbsp; <i class="bi bi-border-all"></i>&nbsp;&nbsp;
+        <a class="navbar-brand" href="#" style="padding: 5px; font-weight: bold"
+          >Trello</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Workspaces
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Recent
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Starred
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <button type="button" class="btn btn-success">Create</button>&nbsp;
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="contain">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="dropdown">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+          >
+            <i class="bi bi-bar-chart-line"></i>&nbsp; Board<span
+              class="caret"
+            ></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Team board</a
+              >
+            </li>
+            <button class="btn btn-primary"><i class="bi bi-star"></i></button>&nbsp;&nbsp;
+            <button class="btn btn-primary">Acme,Inc.</button>&nbsp;&nbsp;
+
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74yjgqq3Ef1tvCvQPIfBIaDYQziw9V7x67Q&usqp=CAU" alt="" class="img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSinYE4d1ZBRv5VyhsGNEaXIm8CkjEhSF3Hug&usqp=CAU" alt="" class="img4">&nbsp;
+
+            <button class="btn btn-primary button5" >+3</button>&nbsp;
+            <button class="btn btn-primary" >Invite</button>&nbsp;
+          
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="..."
+                aria-label="..."
+              />
+            </form>
+       
+      </div>
+    </nav>
+  </div>
+  <div class="section">
+    <div class="row ">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">To do</h5>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvbXoekcvINJO6gImTXYL0zVEL1afVnO27MQ&usqp=CAU" alt="" class="img6"><br><br>
+          <button style="background-color: rgb(255, 0, 200); height: 20px ;width: 100px"></button>
+          <button style="background-color: rgb(48, 72, 100); height: 20px ;width: 100px"></button><br>
+            
+            <i class="bi bi-justify-right"></i>
+            <i class="bi bi-magic">2/3</i>
+            <i class="bi bi-arrow-counterclockwise">4</i>&nbsp;&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSinYE4d1ZBRv5VyhsGNEaXIm8CkjEhSF3Hug&usqp=CAU" alt="" class="img4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+            
+<hr>
+
+<button style="background-color: pink; height: 20px ;width: 100px"></button>
+<button style="background-color: blue; height: 20px ;width: 100px"></button><br><br><br>
+<button style="background-color: yellow; height: 20px ;width: 100px"></button><br>
+
+<i class="bi bi-justify-right"></i>
+<i class="bi bi-magic">2/3</i>&nbsp;&nbsp;
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSinYE4d1ZBRv5VyhsGNEaXIm8CkjEhSF3Hug&usqp=CAU" alt="" class="img4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3"><br>
+            <p></p><i class="bi bi-file-plus">&nbsp;</i>Add a card</p>
+
+          </div>
+        </div>
+        </div>
+      
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Doing</h5>
+            <button style="background-color: yellow; height: 20px ;width: 100px"></button>
+            <button style="background-color: blue; height: 20px ;width: 100px"></button><br>
+            <i class="bi bi-justify-right"></i>
+            <i class="bi bi-magic">2/3</i>
+            <i class="bi bi-arrow-counterclockwise">4</i>&nbsp;&nbsp;&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74yjgqq3Ef1tvCvQPIfBIaDYQziw9V7x67Q&usqp=CAU" alt="" class="img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3"><br><br>
+            <button style="background-color: darkblue; height: 20px ;width: 100px"></button><br>
+            <i class="bi bi-justify-right"></i>
+            <i class="bi bi-magic">2/3</i>
+            <i class="bi bi-arrow-counterclockwise">4</i>&nbsp;&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3"><br><br>
+          <br>  
+            <button style="background-color: yellow; height: 20px ;width: 100px"></button>
+            <button style="background-color: blue; height: 20px ;width: 100px"></button><br>
+            <i class="bi bi-justify-right"></i>
+            <i class="bi bi-magic">2/3</i>&nbsp;&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74yjgqq3Ef1tvCvQPIfBIaDYQziw9V7x67Q&usqp=CAU" alt="" class="img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3"><br>
+            <button style="background-color: blue; height: 20px ;width: 100px"></button><br>
+            <i class="bi bi-justify-right"></i>
+            <i class="bi bi-magic">2/3</i>&nbsp;&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS74yjgqq3Ef1tvCvQPIfBIaDYQziw9V7x67Q&usqp=CAU" alt="" class="img2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+            <p><i class="bi bi-file-plus">&nbsp;</i>Add a card</p>
+
+          </div>
+        </div>
+      </div>
+
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Done</h5><br><br>
+              <i class="bi bi-justify-right"></i>
+              <i class="bi bi-magic">2/3</i>&nbsp;&nbsp;
+              <button type="button" class="btn btn-success">2/2</button>&nbsp;
+              <button type="button" class="btn btn-success">June 6</button>&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+<br><br>
+            <button style="background-color: rgb(255, 0, 76); height: 20px ;width: 100px"></button>
+            <button style="background-color: rgb(0, 102, 255); height: 20px ;width: 100px"></button><br>
+            <i class="bi bi-justify-right"></i>
+            <i class="bi bi-magic">2/3</i>
+            <button type="button" class="btn btn-success">Jun 12</button>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3"><br><br>
+            <i class="bi bi-justify-right"></i>
+            <i class="bi bi-magic">2/3</i>
+            <button type="button" class="btn btn-success">4/4</button>&nbsp;&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRexvmTa6z4ThJhigSKlAG93GbFbdrfFHYn2Q&usqp=CAU" alt="" class="img3">
+
+
+            <p><i class="bi bi-file-plus">&nbsp;</i>Add a card</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
